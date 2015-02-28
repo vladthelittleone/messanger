@@ -15,6 +15,8 @@
 		0F8198871AA22B4C007E87B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8198861AA22B4C007E87B4 /* Images.xcassets */; };
 		0F81988A1AA22B4C007E87B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8198881AA22B4C007E87B4 /* LaunchScreen.xib */; };
 		0F8198961AA22B4C007E87B4 /* WirplTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8198951AA22B4C007E87B4 /* WirplTests.m */; };
+		0F8198A01AA240C5007E87B4 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F81989F1AA240C5007E87B4 /* creme_brelee.jpg */; };
+		0F8198A61AA244FC007E87B4 /* FriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8198A51AA244FC007E87B4 /* FriendTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		0F81988F1AA22B4C007E87B4 /* WirplTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WirplTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8198941AA22B4C007E87B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8198951AA22B4C007E87B4 /* WirplTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WirplTests.m; sourceTree = "<group>"; };
+		0F81989F1AA240C5007E87B4 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = ../SimpleTable/simpletable_image_pack/creme_brelee.jpg; sourceTree = "<group>"; };
+		0F8198A41AA244FC007E87B4 /* FriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendTableViewCell.h; path = ../FriendTableViewCell.h; sourceTree = "<group>"; };
+		0F8198A51AA244FC007E87B4 /* FriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendTableViewCell.m; path = ../FriendTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 		0F81986A1AA22B4C007E87B4 = {
 			isa = PBXGroup;
 			children = (
+				0F81989F1AA240C5007E87B4 /* creme_brelee.jpg */,
 				0F8198751AA22B4C007E87B4 /* Wirpl */,
 				0F8198921AA22B4C007E87B4 /* WirplTests */,
 				0F8198741AA22B4C007E87B4 /* Products */,
@@ -84,6 +90,8 @@
 		0F8198751AA22B4C007E87B4 /* Wirpl */ = {
 			isa = PBXGroup;
 			children = (
+				0F8198A41AA244FC007E87B4 /* FriendTableViewCell.h */,
+				0F8198A51AA244FC007E87B4 /* FriendTableViewCell.m */,
 				0F81987A1AA22B4C007E87B4 /* AppDelegate.h */,
 				0F81987B1AA22B4C007E87B4 /* AppDelegate.m */,
 				0F81987D1AA22B4C007E87B4 /* MasterViewController.h */,
@@ -205,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8198851AA22B4C007E87B4 /* Main.storyboard in Resources */,
+				0F8198A01AA240C5007E87B4 /* creme_brelee.jpg in Resources */,
 				0F81988A1AA22B4C007E87B4 /* LaunchScreen.xib in Resources */,
 				0F8198871AA22B4C007E87B4 /* Images.xcassets in Resources */,
 			);
@@ -227,6 +236,7 @@
 				0F81987C1AA22B4C007E87B4 /* AppDelegate.m in Sources */,
 				0F81987F1AA22B4C007E87B4 /* MasterViewController.m in Sources */,
 				0F8198791AA22B4C007E87B4 /* main.m in Sources */,
+				0F8198A61AA244FC007E87B4 /* FriendTableViewCell.m in Sources */,
 				0F8198821AA22B4C007E87B4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +428,7 @@
 				0F81989B1AA22B4C007E87B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F81989C1AA22B4C007E87B4 /* Build configuration list for PBXNativeTarget "WirplTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				0F81989E1AA22B4C007E87B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
