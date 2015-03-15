@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JSQMessagesViewController/JSQMessages.h>
 
-@interface DetailViewController : UIViewController
+@interface MessagesViewController : JSQMessagesViewController <UIAlertViewDelegate>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) id messagesItem;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+- (void)receiveMessagePressed:(UIBarButtonItem *)sender;
 
 @end
 

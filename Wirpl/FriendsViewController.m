@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 vladthelittleone. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "FriendsViewController.h"
+#import "MessagesViewController.h"
 #import "FriendTableViewCell.h"
 
-@interface MasterViewController ()
+@interface FriendsViewController ()
 
 @property NSMutableArray *objects;
 @end
 
-@implementation MasterViewController
+@implementation FriendsViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -27,6 +27,7 @@
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    
     self.navigationItem.rightBarButtonItem = addButton;
 }
 
@@ -50,7 +51,7 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDate *object = self.objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setMessagesItem:object];
     }
 }
 
