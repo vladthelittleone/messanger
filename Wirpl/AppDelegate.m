@@ -15,9 +15,12 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Load our default settings
+    [NSUserDefaults saveIncomingAvatarSetting:YES];
+    [NSUserDefaults saveOutgoingAvatarSetting:YES];
+    
     return YES;
 }
 

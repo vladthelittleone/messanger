@@ -48,11 +48,7 @@
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        [[segue destinationViewController] setMessagesItem:object];
-    }
+    // TODO
 }
 
 #pragma mark - Table View
@@ -71,7 +67,7 @@
     NSDate *object = self.objects[indexPath.row];
     cell.title.text = [object description];
     cell.status.text = @"online";
-    cell.friendImageView.image = [UIImage imageNamed:@"creme_brelee.jpg"];
+    cell.friendImageView.image = [UIImage imageNamed:@"demo_avatar_cook"];
     return cell;
 }
 

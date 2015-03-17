@@ -24,23 +24,33 @@
     /**
      *  You MUST set your senderId and display name
      */
-    self.senderId = (self.senderId != nil) ? self.senderId : @"Anonymous";
-    self.senderDisplayName = @"Vlad";
+    self.senderId = kJSQDemoAvatarIdSquires;
+    self.senderDisplayName = kJSQDemoAvatarDisplayNameSquires;
+    
+    /**
+     *  Load up our fake data for the demo
+     */
+    self.demoData = [[DemoModelData alloc] init];
     
     /**
      *  You can set custom avatar sizes
+     * 
      */
+    
 //    if (![NSUserDefaults incomingAvatarSetting]) {
 //        self.collectionView.collectionViewLayout.incomingAvatarViewSize = CGSizeZero;
 //    }
 //    
 //    if (![NSUserDefaults outgoingAvatarSetting]) {
 //        self.collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero;
-//    }
-    
+//    } 
+
     self.showLoadEarlierMessagesHeader = YES;
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage jsq_defaultTypingIndicatorImage] style:UIBarButtonItemStylePlain target:self action:@selector(receiveMessagePressed:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage jsq_defaultTypingIndicatorImage]
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(receiveMessagePressed:)];
     
     /**
      *  Customize your toolbar buttons
@@ -53,10 +63,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    if (self.delegateModal) {
-        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:self action:@selector(closePressed:)];
-    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -68,7 +74,8 @@
      *  You must set this from `viewDidAppear:`
      *  Note: this feature is mostly stable, but still experimental
      */
-    self.collectionView.collectionViewLayout.springinessEnabled = [NSUserDefaults springinessSetting];
+    
+//    self.collectionView.collectionViewLayout.springinessEnabled = [NSUserDefaults springinessSetting];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,14 +87,6 @@
 {
     NSLog(@"Receive message pressed");
 }
-
-- (void)closePressed:(UIBarButtonItem *)sender
-{
-    [self.delegateModal didDismissJSQDemoViewController:self];
-}
-
-
-
 
 #pragma mark - JSQMessagesViewController method overrides
 
@@ -167,6 +166,9 @@
     return [self.demoData.messages objectAtIndex:indexPath.item];
 }
 
+/**
+ * Вывод картинки для текущего пользователя и пользователей приславших ему сообщение.
+ */
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     /**
@@ -209,16 +211,16 @@
      */
     JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
     
-    if ([message.senderId isEqualToString:self.senderId]) {
-        if (![NSUserDefaults outgoingAvatarSetting]) {
-            return nil;
-        }
-    }
-    else {
-        if (![NSUserDefaults incomingAvatarSetting]) {
-            return nil;
-        }
-    }
+//    if ([message.senderId isEqualToString:self.senderId]) {
+//        if (![NSUserDefaults outgoingAvatarSetting]) {
+//            return nil;
+//        }
+//    }
+//    else {
+//        if (![NSUserDefaults incomingAvatarSetting]) {
+//            return nil;
+//        }
+//    }
     
     
     return [self.demoData.avatars objectForKey:message.senderId];
@@ -240,6 +242,9 @@
     return nil;
 }
 
+/**
+ * Вывод вверху лэйблов имен пользователей приславших сообщение.
+ */
 - (NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath
 {
     JSQMessage *message = [self.demoData.messages objectAtIndex:indexPath.item];
@@ -251,6 +256,9 @@
         return nil;
     }
     
+    /**
+     * Проверка на то, что предыдущий index-пользователь не идентичен текущему.
+     */
     if (indexPath.item - 1 > 0) {
         JSQMessage *previousMessage = [self.demoData.messages objectAtIndex:indexPath.item - 1];
         if ([[previousMessage senderId] isEqualToString:message.senderId]) {

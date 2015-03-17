@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <JSQMessagesViewController/JSQMessages.h>
 
-@interface MessagesViewController : JSQMessagesViewController <UIAlertViewDelegate>
+#import "DemoModelData.h"
+#import "NSUserDefaults+DemoSettings.h"
 
-@property (strong, nonatomic) id messagesItem;
+@interface MessagesViewController : JSQMessagesViewController <UIActionSheetDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) DemoModelData *demoData;
 
 - (void)receiveMessagePressed:(UIBarButtonItem *)sender;
 

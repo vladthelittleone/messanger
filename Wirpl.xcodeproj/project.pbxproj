@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F79A8461AB5F35700CB8E0D /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F79A8451AB5F35700CB8E0D /* Message.m */; };
+		0F00C3B61AB8AB8200662910 /* FriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F00C3B51AB8AB8200662910 /* FriendTableViewCell.m */; };
 		0F79A8491AB64B8C00CB8E0D /* DemoModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F79A8481AB64B8C00CB8E0D /* DemoModelData.m */; };
 		0F79A84C1AB64BCD00CB8E0D /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F79A84B1AB64BCD00CB8E0D /* NSUserDefaults+DemoSettings.m */; };
 		0F8198791AA22B4C007E87B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8198781AA22B4C007E87B4 /* main.m */; };
@@ -18,8 +18,6 @@
 		0F8198871AA22B4C007E87B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F8198861AA22B4C007E87B4 /* Images.xcassets */; };
 		0F81988A1AA22B4C007E87B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F8198881AA22B4C007E87B4 /* LaunchScreen.xib */; };
 		0F8198961AA22B4C007E87B4 /* WirplTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8198951AA22B4C007E87B4 /* WirplTests.m */; };
-		0F8198A01AA240C5007E87B4 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F81989F1AA240C5007E87B4 /* creme_brelee.jpg */; };
-		0F8198A61AA244FC007E87B4 /* FriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8198A51AA244FC007E87B4 /* FriendTableViewCell.m */; };
 		4C6CC457C79009AEDCCE577E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBEECBBA53D4A2A63CC37B4 /* libPods.a */; };
 		4D668A976D6FD9FB2E6739E2 /* libPods-WirplTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8416319CD242963F8B6C9AA /* libPods-WirplTests.a */; };
 /* End PBXBuildFile section */
@@ -36,8 +34,8 @@
 
 /* Begin PBXFileReference section */
 		059B15A2072856F9536B66BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		0F79A8441AB5F35700CB8E0D /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		0F79A8451AB5F35700CB8E0D /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		0F00C3B41AB8AB5B00662910 /* FriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTableViewCell.h; sourceTree = "<group>"; };
+		0F00C3B51AB8AB8200662910 /* FriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTableViewCell.m; sourceTree = "<group>"; };
 		0F79A8471AB64B8C00CB8E0D /* DemoModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoModelData.h; sourceTree = "<group>"; };
 		0F79A8481AB64B8C00CB8E0D /* DemoModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoModelData.m; sourceTree = "<group>"; };
 		0F79A84A1AB64BCD00CB8E0D /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
@@ -57,9 +55,6 @@
 		0F81988F1AA22B4C007E87B4 /* WirplTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WirplTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8198941AA22B4C007E87B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8198951AA22B4C007E87B4 /* WirplTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WirplTests.m; sourceTree = "<group>"; };
-		0F81989F1AA240C5007E87B4 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = ../SimpleTable/simpletable_image_pack/creme_brelee.jpg; sourceTree = "<group>"; };
-		0F8198A41AA244FC007E87B4 /* FriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendTableViewCell.h; path = ../FriendTableViewCell.h; sourceTree = "<group>"; };
-		0F8198A51AA244FC007E87B4 /* FriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendTableViewCell.m; path = ../FriendTableViewCell.m; sourceTree = "<group>"; };
 		1BABC0EBBE3EC426E6CBFBFF /* Pods-WirplTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WirplTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WirplTests/Pods-WirplTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CA05EE5C57DDBD8AB06BF77 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		90935B85F8E81035947814CA /* Pods-WirplTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WirplTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WirplTests/Pods-WirplTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +96,6 @@
 		0F81986A1AA22B4C007E87B4 = {
 			isa = PBXGroup;
 			children = (
-				0F81989F1AA240C5007E87B4 /* creme_brelee.jpg */,
 				0F8198751AA22B4C007E87B4 /* Wirpl */,
 				0F8198921AA22B4C007E87B4 /* WirplTests */,
 				0F8198741AA22B4C007E87B4 /* Products */,
@@ -164,10 +158,10 @@
 		0F8DF4CA1AB59E7200FC3F76 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				0F00C3B51AB8AB8200662910 /* FriendTableViewCell.m */,
 				0F81987D1AA22B4C007E87B4 /* FriendsViewController.h */,
 				0F81987E1AA22B4C007E87B4 /* FriendsViewController.m */,
-				0F8198A41AA244FC007E87B4 /* FriendTableViewCell.h */,
-				0F8198A51AA244FC007E87B4 /* FriendTableViewCell.m */,
+				0F00C3B41AB8AB5B00662910 /* FriendTableViewCell.h */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -177,8 +171,6 @@
 			children = (
 				0F8198801AA22B4C007E87B4 /* MessagesViewController.h */,
 				0F8198811AA22B4C007E87B4 /* MessagesViewController.m */,
-				0F79A8441AB5F35700CB8E0D /* Message.h */,
-				0F79A8451AB5F35700CB8E0D /* Message.m */,
 			);
 			name = Messages;
 			sourceTree = "<group>";
@@ -288,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F8198851AA22B4C007E87B4 /* Main.storyboard in Resources */,
-				0F8198A01AA240C5007E87B4 /* creme_brelee.jpg in Resources */,
 				0F81988A1AA22B4C007E87B4 /* LaunchScreen.xib in Resources */,
 				0F8198871AA22B4C007E87B4 /* Images.xcassets in Resources */,
 			);
@@ -373,11 +364,10 @@
 			files = (
 				0F81987C1AA22B4C007E87B4 /* AppDelegate.m in Sources */,
 				0F79A84C1AB64BCD00CB8E0D /* NSUserDefaults+DemoSettings.m in Sources */,
-				0F79A8461AB5F35700CB8E0D /* Message.m in Sources */,
 				0F81987F1AA22B4C007E87B4 /* FriendsViewController.m in Sources */,
+				0F00C3B61AB8AB8200662910 /* FriendTableViewCell.m in Sources */,
 				0F8198791AA22B4C007E87B4 /* main.m in Sources */,
 				0F79A8491AB64B8C00CB8E0D /* DemoModelData.m in Sources */,
-				0F8198A61AA244FC007E87B4 /* FriendTableViewCell.m in Sources */,
 				0F8198821AA22B4C007E87B4 /* MessagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
