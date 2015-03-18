@@ -5,6 +5,7 @@ inhibit_all_warnings!
 xcodeproj 'Wirpl'
 
 pod 'JSQMessagesViewController'
+pod 'NZCircularImageView'
 
 target :WirplTests do
   pod 'OCMock', '~> 2.0.1'

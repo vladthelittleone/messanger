@@ -2,15 +2,26 @@ PODS:
   - JSQMessagesViewController (6.1.3):
     - JSQSystemSoundPlayer (~> 2.0.1)
   - JSQSystemSoundPlayer (2.0.1)
+  - NZCircularImageView (0.0.5):
+    - UIActivityIndicator-for-SDWebImage (~> 1.2)
   - OCMock (2.0.1)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
 
 DEPENDENCIES:
   - JSQMessagesViewController
+  - NZCircularImageView
   - OCMock (~> 2.0.1)
 
 SPEC CHECKSUMS:
   JSQMessagesViewController: e93a288a9662d4519c95a28a8c0eec10beae1bfc
   JSQSystemSoundPlayer: 55528c699a283aae2220d3ae7b8b527d2ecef4b4
+  NZCircularImageView: 5c92097f2df91f561c501724a4f2dc64841a6ad0
   OCMock: 60bfc5e6bc0ed592a6b7fb805b6c4d7108d37eb6
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  UIActivityIndicator-for-SDWebImage: 8bd92c15280fbe54816448c6b14674145eee05c7
 
 COCOAPODS: 0.36.0
