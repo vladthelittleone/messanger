@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rS3-R9-Ivy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -40,11 +41,15 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cE-fX-LQg" customClass="NZCircularImageView">
                                             <rect key="frame" x="8" y="4" width="72" height="72"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="72" id="0i0-mt-LYN"/>
                                                 <constraint firstAttribute="width" constant="72" id="BaW-13-a8L"/>
                                                 <constraint firstAttribute="width" constant="72" id="Y8G-MS-kbP"/>
+                                                <constraint firstAttribute="width" secondItem="2cE-fX-LQg" secondAttribute="height" multiplier="1:1" id="jIr-hu-tGj"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="0i0-mt-LYN"/>
+                                                    <exclude reference="BaW-13-a8L"/>
                                                     <exclude reference="Y8G-MS-kbP"/>
                                                 </mask>
                                             </variation>
